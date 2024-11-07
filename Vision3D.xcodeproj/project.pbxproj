@@ -12,12 +12,15 @@
 		0E2327872CD9837300BE4A43 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0E2327862CD9837300BE4A43 /* FirebaseStorage */; };
 		0E2327892CD9838F00BE4A43 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0E2327882CD9838F00BE4A43 /* FirebaseFirestore */; };
 		0E23278B2CD9839D00BE4A43 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0E23278A2CD9839D00BE4A43 /* FirebaseStorage */; };
+		0E30DE102CDD8833005C270A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30DE0F2CDD8833005C270A /* AppDelegate.swift */; };
+		0E30DE112CDD8833005C270A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30DE0F2CDD8833005C270A /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E2327592CD97A1200BE4A43 /* Vision3D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vision3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E23276E2CD980F600BE4A43 /* XCVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2327712CD980F600BE4A43 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		0E30DE0F2CDD8833005C270A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -28,11 +31,21 @@
 			);
 			target = 0E23276D2CD980F600BE4A43 /* XCVision */;
 		};
+		0E30DE0D2CDD8764005C270A /* Exceptions for "Vision3D" folder in "Vision3D" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0E2327582CD97A1200BE4A43 /* Vision3D */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0E23275B2CD97A1200BE4A43 /* Vision3D */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0E30DE0D2CDD8764005C270A /* Exceptions for "Vision3D" folder in "Vision3D" target */,
+			);
 			path = Vision3D;
 			sourceTree = "<group>";
 		};
@@ -72,6 +85,7 @@
 		0E2327502CD97A1200BE4A43 = {
 			isa = PBXGroup;
 			children = (
+				0E30DE0E2CDD87FC005C270A /* Shared */,
 				0E23275B2CD97A1200BE4A43 /* Vision3D */,
 				0E23276F2CD980F600BE4A43 /* XCVision */,
 				0E2327702CD980F600BE4A43 /* Packages */,
@@ -102,6 +116,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E30DE0E2CDD87FC005C270A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0E30DE0F2CDD8833005C270A /* AppDelegate.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E30DE102CDD8833005C270A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E30DE112CDD8833005C270A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +385,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Vision3D/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vision3D/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -389,6 +414,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Vision3D/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vision3D/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
