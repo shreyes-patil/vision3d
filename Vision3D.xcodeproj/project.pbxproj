@@ -14,6 +14,12 @@
 		0E23278B2CD9839D00BE4A43 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0E23278A2CD9839D00BE4A43 /* FirebaseStorage */; };
 		0E30DE102CDD8833005C270A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30DE0F2CDD8833005C270A /* AppDelegate.swift */; };
 		0E30DE112CDD8833005C270A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30DE0F2CDD8833005C270A /* AppDelegate.swift */; };
+		0E30DE142CDE4CD4005C270A /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30DE132CDE4CD4005C270A /* InventoryItem.swift */; };
+		0E30DE152CDE4CD4005C270A /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30DE132CDE4CD4005C270A /* InventoryItem.swift */; };
+		0E30DE182CDE52B0005C270A /* InventoryListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30DE172CDE52B0005C270A /* InventoryListVM.swift */; };
+		0E30DE192CDE52B0005C270A /* InventoryListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30DE172CDE52B0005C270A /* InventoryListVM.swift */; };
+		0E30DE1B2CDE55DF005C270A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30DE1A2CDE55DF005C270A /* String+Extension.swift */; };
+		0E30DE1C2CDE55DF005C270A /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30DE1A2CDE55DF005C270A /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +27,9 @@
 		0E23276E2CD980F600BE4A43 /* XCVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XCVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2327712CD980F600BE4A43 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		0E30DE0F2CDD8833005C270A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E30DE132CDE4CD4005C270A /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
+		0E30DE172CDE52B0005C270A /* InventoryListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryListVM.swift; sourceTree = "<group>"; };
+		0E30DE1A2CDE55DF005C270A /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -121,9 +130,28 @@
 		0E30DE0E2CDD87FC005C270A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				0E30DE162CDE523F005C270A /* Observables */,
+				0E30DE122CDE4C99005C270A /* Models */,
 				0E30DE0F2CDD8833005C270A /* AppDelegate.swift */,
+				0E30DE1A2CDE55DF005C270A /* String+Extension.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		0E30DE122CDE4C99005C270A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E30DE132CDE4CD4005C270A /* InventoryItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0E30DE162CDE523F005C270A /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				0E30DE172CDE52B0005C270A /* InventoryListVM.swift */,
+			);
+			path = Observables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E30DE102CDD8833005C270A /* AppDelegate.swift in Sources */,
+				0E30DE192CDE52B0005C270A /* InventoryListVM.swift in Sources */,
+				0E30DE1C2CDE55DF005C270A /* String+Extension.swift in Sources */,
+				0E30DE142CDE4CD4005C270A /* InventoryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +281,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E30DE112CDD8833005C270A /* AppDelegate.swift in Sources */,
+				0E30DE182CDE52B0005C270A /* InventoryListVM.swift in Sources */,
+				0E30DE1B2CDE55DF005C270A /* String+Extension.swift in Sources */,
+				0E30DE152CDE4CD4005C270A /* InventoryItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

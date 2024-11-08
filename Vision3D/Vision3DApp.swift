@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct Vision3DApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
