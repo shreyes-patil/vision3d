@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyCbV--dMbv6kklTjp-0VXx6bXdCGWikgjo</string>
+	<string></string>
 	<key>GCM_SENDER_ID</key>
-	<string>868517034685</string>
+	<string></string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.shreyas.XCVision</string>
 	<key>PROJECT_ID</key>
-	<string>vision3d-2c53a</string>
+	<string>vision3d</string>
 	<key>STORAGE_BUCKET</key>
-	<string>vision3d-2c53a.firebasestorage.app</string>
+	<string></string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:868517034685:ios:16ad9736bf0d52a5e8d5d4</string>
+	<string></string>
 </dict>
 </plist>
