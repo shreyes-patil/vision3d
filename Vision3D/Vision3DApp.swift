@@ -15,7 +15,9 @@ struct Vision3DApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                InventoryListView()
+            }
         }
     }
 }
