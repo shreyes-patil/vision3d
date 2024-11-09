@@ -5,8 +5,8 @@
 //  Created by Shreyas Patil on 11/7/24.
 //
 
-import FirebaseCore
 import FirebaseStorage
+import FirebaseCore
 import FirebaseFirestore
 import Foundation
 import UIKit
@@ -24,7 +24,7 @@ class AppDelegate: NSObject, UIApplicationDelegate{
         var host = "127.0.0.1"
         
 #if !targetEnvironment(simulator)
-        host = "10.110.115.172"
+        host = "10.110.151.215"
         #endif
         
         let settings = Firestore.firestore().settings

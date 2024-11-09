@@ -14,5 +14,8 @@ struct InventoryFormView: View {
 }
 
 #Preview {
-    InventoryFormView()
+    NavigationStack{
+        InventoryFormView()
+    }
+    
 }
