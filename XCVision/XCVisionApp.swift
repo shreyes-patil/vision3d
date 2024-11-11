@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
+
 
 @main
 struct XCVisionApp: App {
@@ -14,7 +16,9 @@ struct XCVisionApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                InventoryListView()
+            }
         }
     }
 }
