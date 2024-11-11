@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import SwiftUI
+
+class NavigationViewModel: ObservableObject {
+    @Published var selectedItem: InventoryItem?
+}

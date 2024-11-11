@@ -38,9 +38,14 @@ struct InventoryListView: View {
 
 struct InventoryListItemView: View{
     let item : InventoryItem
+    
+    @EnvironmentObject var navVM: NavigationViewModel
+    @Environment(\.openWindow) var openWindow
+    
     var body: some View{
         Button{
-            
+            navVM.selectedItem = item
+            openWindow(id: "item")
         } label: {
             VStack{
                 ZStack{
@@ -75,9 +80,13 @@ struct InventoryListItemView: View{
     }
 }
 
-//#Preview {
-//    NavigationStack{
-//        InventoryListView()
-//    }
-//    
-//}
+#Preview {
+    @Previewable @StateObject var navVM = NavigationViewModel()
+
+    return NavigationStack{
+        
+        InventoryListView()
+            .environmentObject(navVM)
+    }
+    
+}
