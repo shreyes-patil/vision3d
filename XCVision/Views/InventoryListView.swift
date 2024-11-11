@@ -22,7 +22,10 @@ struct InventoryListView: View {
                 ForEach(vm.items){
                     item in
                     InventoryListItemView(item: item)
-                        .onDrag{NSItemProvider()}
+                        .onDrag{
+                            guard let usdzURL = item.usdzURL else{return NSItemProvider()}
+                            return NSItemProvider(object: USDZItemProvider(usdzURL: usdzURL))
+                        }
                     
                 }
             }
