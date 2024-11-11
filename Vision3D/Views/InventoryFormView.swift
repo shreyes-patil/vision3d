@@ -15,10 +15,35 @@ struct InventoryFormView: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        Form{
+        Form {
             List{
                 inputSection
                 arSection
+                
+                if case .deleting(let type) = vm.loadingState{
+                    HStack{
+                        Spacer()
+                        VStack(spacing: 8){
+                            ProgressView()
+                            Text("deleting \(type == .usdzWithThumbnail ? "USDZ File" : "Item")")
+                                .foregroundStyle(.red)
+                        }
+                        Spacer()
+                    }
+                }
+                if case .edit = vm.formType{
+                    Button("Delete", role: .destructive){
+                        Task{
+                            do {
+                                try await vm.deleteItem()
+                                dismiss()
+                                
+                            }catch{
+                                vm.error = error.localizedDescription
+                            }
+                        }
+                    }
+                }
             }
         }
         .toolbar{
@@ -115,7 +140,12 @@ struct InventoryFormView: View {
                         Text("View in AR")
                     }
                 }
-
+                
+                Button("Delete USDZ", role: .destructive){
+                    Task{await vm.deleteUSDZ()}
+                }
+                
+                
             } else {
                 Button{
                     vm.showUSDZSource = true
